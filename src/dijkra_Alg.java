@@ -27,7 +27,7 @@ public class dijkra_Alg {
         for (int i = 0; i < size; i++) {
             for (int n = 0; n < size; n++) {
                 r = random.nextInt(15) - 5;
-                if (r < 0) {
+                if (r < 0 || i==n) {
                     r = 0;
                 }
                 GRAPH[i][n] = new Node(r);
@@ -63,7 +63,7 @@ public class dijkra_Alg {
 
     private static String[] Algo(Node[] GRAPH){
         String[] final_Paths = new String[size];
-        
+
 
         return final_Paths;
     }
